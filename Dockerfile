@@ -1,6 +1,6 @@
-FROM postgres:9.5.3
+FROM postgres:16.2
 
-MAINTAINER "Ivan Ermilov <ivan.s.ermilov@gmail.com>"
+LABEL MAINTAINER="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
 
 COPY hive-schema-2.3.0.postgres.sql /hive/hive-schema-2.3.0.postgres.sql
 COPY hive-txn-schema-2.3.0.postgres.sql /hive/hive-txn-schema-2.3.0.postgres.sql
